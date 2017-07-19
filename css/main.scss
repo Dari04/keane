@@ -1,0 +1,578 @@
+
+
+/* fuentes*/
+@mixin roboto{
+	font-family: 'Roboto', sans-serif;
+}
+@mixin fuente-negra{
+	color:#443E44;
+}
+@mixin fuente-blanca{
+	color:white;
+}
+@mixin fuente-gris{
+	color: rgba(255, 255, 255, 0.74);
+}
+@mixin fuente-morada{
+	color:#542733;
+}
+@mixin fuente-naranja{
+	color:#D67825;
+}
+@mixin letra-delgada{
+    font-weight: 300;
+}
+@mixin letra-norm{
+	font-weight: 400;
+}
+@mixin letra-gruesa{
+}
+@mixin fuente-italica{
+	font-style: italic;
+}
+@mixin fuente-extra-grande{
+	font-size: 125px;
+}
+@mixin fuente-grande{
+	font-size: 65px;
+}
+@mixin fuente-mediana{
+	font-size: 30px;
+}
+@mixin fuente-regular{
+	font-size:25px;
+}
+@mixin fuente-pequeña{
+	font-size:22px;
+}
+/*fondos y adicionales*/
+
+@mixin bg-verde{
+	background:#27AD60;
+	color:white;
+	a{
+		color:white;
+	}
+}
+
+@mixin bg-imagen{
+	color:white;
+	background-image:url("../img/carousel-bg.jpg")
+}
+@mixin bg-imagen2{
+	background-image: url("../img/img-divider-img.jpg")
+	font-size: 125px;
+}
+
+@mixin bg-azul{
+	color:white;
+	background-color:#2C3E50;
+}
+
+@mixin botones{
+	background:#443E44;
+	padding:10px 20px;
+	color:white;
+	border-radius:initial;
+	font-weight:400;
+	font-size: 25px;
+}
+@mixin raya-en-negro{
+	width:200px;
+	background-color:#443E44;
+	height:1px;
+    margin: 25px auto 50px auto;
+}
+@mixin raya-en-blanco{
+	height:1px;
+	width:200px;
+	background-color:white;
+    margin: 25px auto 50px auto;
+}
+@mixin raya-pequeña-b{
+	height:1px;
+	width:70px;
+	background-color:white;
+    margin: 25px auto 40px auto;	
+}
+@mixin relleno-supe-inf{
+	padding: 2% 0;
+}
+@mixin relleno-infe{
+	padding: 1% 0;
+}
+/*paleta*/
+@mixin linea-colores-margen{
+	margin:10px 0;
+}
+@mixin muestra-tamaño{
+	height: 120px;
+    width: 165px;
+    display: inline-block;
+    margin: 0 -2px;
+}
+@mixin uno{
+	background-color:#69D2E7;
+}
+@mixin dos{
+	background:#A7DBDB;
+}
+@mixin tres{
+	background:#E0E4CC;
+}
+@mixin cuatro{
+	background:#F38630;
+}
+@mixin cinco{
+	background:#FA6900;
+}
+
+@mixin seis{
+	background:#E94C6F;
+}
+@mixin siete{
+	background:#542733;
+}
+@mixin ocho{
+	background:#5A6A62;
+}
+@mixin nueve{
+	background:#C6D5CD;
+}
+
+@mixin diez{
+	background-color: #FDF200;
+}
+@mixin once{
+	background-color: #DB3340;
+}
+@mixin doce{
+	background-color: #E8B71A;
+}
+@mixin trece{
+	background-color: #F7EAC8;
+}
+@mixin catorce{
+	background-color: #1FDA96;
+}
+@mixin quince{
+	background-color: #28ABE3;
+}
+@mixin dieciseis{
+	background:#588C73;
+}
+@mixin diecisiete{
+	background: #F2E394;
+}
+@mixin dieciocho{
+	background: #F2AE72;
+}
+@mixin diecinueve{
+	background: #D96459;
+}
+@mixin veinte{
+	background: #8C4646;
+}
+
+@mixin veintiuno{
+	background: #D0C91F;
+}
+@mixin veintidos{
+	background: #85C4B9;
+}
+@mixin veintitres{
+	background: #008BBA;
+}
+@mixin veinticuatro{
+	background: #DF514C;
+}
+@mixin veinticinco{
+	background: #DC403B;
+}
+/*progres bar*/
+@mixin pro-bar{
+	border-radius: initial;
+    padding: 2px;
+    height: 10px;
+    margin-bottom: 4px;
+    	.progress-bar{
+    		background: #E67E22;
+    	}
+}
+/*prices tarjet*/
+@mixin tarjeta-defaut{
+	border:2px solid #27AD60;
+	width:100%;
+	div{
+		&:nth-child(1){
+			padding: 20px 60px;
+			margin:0;
+			h3{
+				margin:0 !important;
+			}
+		}
+		&:nth-child(2){
+			padding: 5px 10px 25px;
+			background:#27AD60;
+			color:white;
+			h1{
+				font-size: 40px;
+				span{
+					font-size: 20px;
+				}
+			}
+			small{
+				color:white;
+			}
+		}
+		&:nth-child(9){
+			padding: 50px 0;
+			a{
+				@include botones;
+			}
+		}
+	}
+	.descrip{
+		padding: 7px 0;
+	}
+	.blanco{
+		background: white;
+		color:#2C3E50;
+	}
+	.naranja{
+		background:#8F5F38;
+	}
+	
+
+}
+/*margins*/
+@mixin margins{
+    margin: 60px 0;
+}
+@mixin margin-b-10px{
+	margin-bottom: 10px;
+}
+@mixin margin-b-40px{
+	margin-bottom:40px;
+}
+@mixin margin-t-10px{
+	margin-top:10px;
+}
+@mixin margin-all{
+	margin:10px;
+}
+/*rellenos*/
+@mixin relleno-50{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+@mixin relleno-70{
+	padding-top: 70px;
+	padding-bottom:70px;
+}
+@mixin relleno-15{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+/*rellenos laterales*/
+@mixin relleno-50-si{
+	padding-left: 50px;
+	padding-right:50px;
+}
+@mixin bloque{
+	display:inline-block;
+}
+@mixin borde-punteado-top{
+	border-top: 1px dashed #809B83;
+}
+/*rellenoall*/
+@mixin rellenoall-20{
+	padding:20px !important;
+}
+/*rellenobotom*/
+@mixin relleno-b-100{
+	padding-bottom: 100px !important;
+}
+body{
+	@include roboto;
+}
+h1{
+	@include fuente-grande;
+	@include letra-norm;
+}
+/*nav*/
+nav{
+	@include bg-verde;
+	@include relleno-supe-inf;
+	@include letra-delgada;
+}
+header{
+	@include bg-imagen;
+	@include relleno-infe;
+	p{
+		@include fuente-mediana;
+		@include letra-delgada;
+	}
+}
+.palette{
+	@include fuente-negra;
+	@include letra-norm;
+	.raya{
+		@include raya-en-negro;
+	}
+	.linea-colores{
+		@include linea-colores-margen;
+		.muestra{
+			@include muestra-tamaño;
+		}
+		.color1{
+			@include uno;
+		}
+		.color2{
+			@include dos;
+		}
+		.color3{
+			@include tres;
+		}
+		.color4{
+			@include cuatro;
+		}
+		.color5{
+			@include cinco;
+		}
+
+		.color6{
+			@include seis;
+		}
+		.color7{
+			@include siete;
+			@include fuente-blanca;
+		}
+		.color8{
+			@include ocho;
+		}
+		.color9{
+			@include nueve;
+		}
+		.color10{
+			@include diez;
+		}
+
+		.color11{
+			@include once;
+		}
+		.color12{
+			@include doce;
+		}
+		.color13{
+			@include trece;
+		}
+		.color14{
+			@include catorce;
+		}
+		.color15{
+			@include quince;
+		}
+
+		.color16{
+			@include dieciseis;
+		}
+		.color17{
+			@include diecisiete;
+		}
+		.color18{
+			@include dieciocho;
+		}
+		.color19{
+			@include diecinueve;
+		}
+		.color20{
+			@include veinte;
+		}
+
+		.color21{
+			@include veintiuno;
+		}
+		.color22{
+			@include veintidos;
+		}
+		.color23{
+			@include veintitres;
+		}
+		.color24{
+			@include veinticuatro;
+		}
+		.color25{
+			@include veinticinco;
+		}
+	}	
+}
+.about-us{
+	@include bg-azul;
+	@include relleno-70;
+	.raya{
+		@include raya-en-blanco;
+	}
+	p{
+		@include letra-norm;
+		@include fuente-gris;
+	}
+	.texto, .imagen-container{
+		@include relleno-50;
+		@include relleno-50-si;
+	}
+	.skills{
+		@include margins;
+		.progress{
+			@include pro-bar;
+		}
+	}
+	a{
+		@include botones;
+	}
+}
+.we-do{
+	@include bg-verde;
+	@include relleno-70;
+	@include letra-norm;
+	.raya{
+		@include raya-en-blanco;
+	}
+	p{
+		@include fuente-gris;
+	}
+	.tarjeta{
+		@include relleno-50;
+		@include relleno-50-si;
+		&:hover{
+			background:#2A7257;
+			.imagen-back{
+				background:#A96931;
+			}
+		}
+	}
+	.imagen-back{
+		height: 145px;
+		width: 155px;
+		padding: 15px;		
+		margin:auto;
+		background: linear-gradient(90deg, rgba(106,117,128,1) 0%, rgba(106,117,128,1) 41%, rgba(44,62,80,1) 62%, rgba(44,62,80,1) 100%);
+		img{
+			max-width: 115px;
+			margin:auto;
+		}
+	}
+	h2{
+		@include letra-norm;
+	}
+	a{
+		@include botones;
+	}
+}
+.team{
+	@include bg-verde;
+		p{
+			@include letra-norm;
+			@include fuente-gris;
+	}
+	
+	.col-md-3{
+		@include relleno-50;
+		img{
+		margin:auto;
+		max-width:55%;
+		}
+		small{
+			@include fuente-morada;
+			@include margin-b-10px;
+			@include bloque;
+		}
+		.parrafo{
+			height: 120px;
+			@include relleno-15;
+			@include letra-norm;
+			@include fuente-gris;
+			@include borde-punteado-top;
+				
+		}
+		.redes{
+			@include fuente-regular;
+				a{
+					@include fuente-gris;
+					@include margin-all; 
+					@include bloque;
+				}
+			}	
+	}
+}
+.price{
+	@include bg-azul;
+	@include relleno-70;
+	.raya{
+		@include raya-en-blanco
+	}
+	p{
+		@include fuente-gris;
+	}
+	.paquetes-cont{
+		@include relleno-70;
+		.paquetes{
+			@include tarjeta-defaut;
+			@include bloque;
+			&:hover{
+				border-color:#F1811F;
+			}
+		}
+	}	
+}
+.say{
+	@include bg-azul;
+	@include relleno-70;
+	.raya{
+		@include raya-en-blanco;
+	}
+	p{
+		@include fuente-gris;
+	}
+	.col-md-8{
+		@include relleno-50;
+		p{
+			@include fuente-italica;
+			@include fuente-pequeña;
+		}
+		h3{
+			@include fuente-naranja;
+		}
+	}
+}
+.touch{
+	@include bg-azul;
+	@include relleno-70;
+	.raya{
+		@include raya-en-blanco;
+	}
+	p{
+		@include bloque;
+		@include margin-b-40px;
+	}
+	form{
+		.form-control{
+			@include rellenoall-20;
+		}
+		.mensage{
+			@include relleno-b-100;
+		}
+		.btn{
+			@include botones;
+		}
+	}
+}
+.boton-redes{
+	@include bg-imagen2;
+}
+
+footer{
+	@include bg-verde;
+	@include relleno-50; 
+
+}
